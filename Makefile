@@ -4,7 +4,7 @@ HOST ?= 0.0.0.0
 PORT ?= 8000
 
 run:
-	poetry run uvicorn main:app --host $(HOST) --port $(PORT)
+	poetry run uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 
 install:
 	@echo "Installing dependency $(LIBRARY)"
